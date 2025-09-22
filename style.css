@@ -4,7 +4,8 @@
 }
 body{
   background-color: hsl(30, 54%, 90%);
-    margin: auto;
+    margin: 0;
+    padding: 0;
 }
 main{
     background-color: hsl(0, 0%, 100%);
@@ -44,6 +45,13 @@ h2{
 ul.preparation li::marker{
     color: hsl(332, 51%, 32%);
 }
-.ingredientes{
-    padding: 5%;
+ul.ingredientes li::marker{
+    color: hsl(14, 45%, 36%);
+}
+ol.Instructions li::marker{
+    color: hsl(14, 45%, 36%);
+    font-weight: bold;
+}
+strong{
+    color: hsl(24, 5%, 18%);
 }
