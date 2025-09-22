@@ -1,10 +1,16 @@
+@charset "UTF-8";
+*{
+    box-sizing: border-box;
+}
 body{
   background-color: hsl(30, 54%, 90%);
+    margin: auto;
 }
 main{
     background-color: hsl(0, 0%, 100%);
     margin: auto;
-    height: 100vh;
+    max-width: 800px;
+    min-width: 300px;
     width: 50%;
     border-radius: 10px;
     margin-top: 60px;
@@ -16,8 +22,28 @@ img{
     height: auto;
     border-radius: 10px;
 }
-.imagem{
-   
-    overflow: hidden;
+
+article{
+    padding: 5%;
+    margin: auto;
+}
+div.preparation{
+    background-color: hsl(330, 100%, 98%);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 5%;
+}
+h2.preparation{
+    color: hsl(332, 51%, 32%);
+    margin: 0px;
+    padding: 0px;
+}
+h2{
+    color: hsl(14, 45%, 36%);
+}
+ul.preparation li::marker{
+    color: hsl(332, 51%, 32%);
+}
+.ingredientes{
     padding: 5%;
 }
