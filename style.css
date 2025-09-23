@@ -2,21 +2,43 @@
 *{
     box-sizing: border-box;
 }
+@font-face{
+    font-family: Young Serif;
+    src: url('fontes/YoungSerif-Regular.ttf') format('truetype');
+    font-family: Outfit-Black;
+    src: url('fontes/Outfit-Black.ttf') format('truetype');
+    font-family: Outfit-Bold;
+    src: url('fontes/Outfit-Bold.ttf') format('truetype');
+    font-family: Outfit-Regular;
+    src: url('fontes/Outfit-Regular.ttf') format('truetype');
+    font-family: Outfit-ExtraBold;
+    src: url('fontes/Outfit-ExtraBold.ttf') format('truetype');
+}
+@media (min-width: 750px) {
+  main {
+     width: 100%;
+  min-height: 100vh;
+  padding: 20px;
+  background: #fff;
+  border-radius: 0;
+  box-sizing: border-box; /* evita espaço sobrando */
+  }
+}
 body{
   background-color: hsl(30, 54%, 90%);
-    margin: 0;
-    padding: 0;
+  margin: auto;
 }
 main{
     background-color: hsl(0, 0%, 100%);
     margin: auto;
-    max-width: 800px;
-    min-width: 300px;
+    max-width: 1440px;
+    min-width: 375px;
     width: 50%;
     border-radius: 10px;
     margin-top: 60px;
     margin-bottom: 60px;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
+    display: block;
 }
 img{
     width: 100%;
@@ -54,4 +76,19 @@ ol.Instructions li::marker{
 }
 strong{
     color: hsl(24, 5%, 18%);
+}
+table.nutrition{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+td{
+    color: hsl(14, 45%, 36%);
+}
+.aa{
+    color: black;
+}
+.nutrition td {
+  padding: 12px 0;
+  border-bottom: 1px solid #ddd;
 }
